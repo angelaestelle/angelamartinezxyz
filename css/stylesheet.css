@@ -1,0 +1,199 @@
+@font-face {
+  font-family: Messina;
+  src: url(../fonts/MessinaSans-Regular.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+	font-family: Messina;
+	src: url(../fonts/MessinaSans-Bold.ttf);
+	font-weight: 700;
+  }
+
+@font-face {
+  font-family: Dubbo;
+  src: url(../fonts/DubboRegular.ttf);
+}
+
+body {
+	margin: 0;
+}
+
+/* HEADINGS AND TYPEFACES */
+
+h1 {
+	font-family: Dubbo;
+	font-size: 2.5em;
+	color: #D395FA;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	color: #666;
+
+}
+
+.big-links {
+	font-family: Messina;
+	font-weight: 500;
+	font-size: 1.75em;
+	padding-top: 20px;
+
+}
+
+.big-links a{
+	color: #666;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+	color: #D395FA;
+
+}
+
+* { box-sizing: border-box; }
+
+body { 
+  font-family: 'Messina', sans-serif;
+  color: #666;
+}
+
+
+/* STRUCTURE */
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+.subhead {
+	width: 80%;
+	padding-top: 20px;
+}
+
+
+nav {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+ul li a {
+	color: #666;
+}
+
+ul li a:hover {
+	font-weight: 700;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid; 	
+	color: #666;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+footer {
+	padding: 0 15px;
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+
+	.big-links {
+		font-family: Messina;
+		font-weight: 500;
+		font-size: 1.5em;
+		padding-top: 20px;
+	
+	}
+	
+	.big-links a{
+		color: #666;
+	}
+	
+	.big-links a:hover{
+		font-weight: 700;
+	}
+	
+
+	a {
+		text-decoration: none;
+	}
+	
+	strong {
+		font-weight: 700;
+		color: #D395FA;
+	
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.big-links {
+		font-family: Messina;
+		font-weight: 500;
+		font-size: 1.5em;
+		padding-top: 20px;
+	
+	}
+	
+	.big-links a{
+		color: #666;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	strong {
+		font-weight: 700;
+		color: #D395FA;
+	
+	}
+}
