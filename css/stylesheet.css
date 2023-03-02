@@ -15,15 +15,15 @@
   src: url(../fonts/DubboRegular.ttf);
 }
 
-body {
-	margin: 0;
-}
+body { 
+	font-family: 'Messina', sans-serif;
+	color: #666;
+  }
 
 /* HEADINGS AND TYPEFACES */
 
 h1 {
 	font-family: Dubbo;
-	font-size: 2.5em;
 	color: #D395FA;
 }
 
@@ -48,7 +48,6 @@ p a:hover {
 .big-links {
 	font-family: Messina;
 	font-weight: 500;
-	font-size: 1.75em;
 	padding-top: 20px;
 }
 
@@ -66,6 +65,7 @@ a {
 .big-links a:hover{
 	font-weight: 700;
 }
+
 strong {
 	font-weight: 700;
 	color: #D395FA;
@@ -74,65 +74,6 @@ strong {
 
 * { box-sizing: border-box; }
 
-body { 
-  font-family: 'Messina', sans-serif;
-  color: #666;
-}
-
-
-/* STRUCTURE */
-
-.wrapper {
-	padding: 5px;
-	max-width: 960px;
-	width: 95%;
-	margin: 20px auto;
-}
-
-.subhead {
-	width: 80%;
-	padding-top: 20px;
-}
-
-
-nav {
-	margin: 0;
-	font-weight: 700;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li {
-	float: left;
-	margin-right: 20px;
-}
-
-ul li a {
-	color: #666;
-}
-
-ul li a:hover {
-	color: #D395FA;
-}
-
-footer {
-	margin-top: 100px;
-}
-
-footer ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-footer ul li {
-	float: left;
-	margin-right: 20px;
-}
 
 .columns {
 	display: flex;
@@ -156,9 +97,49 @@ footer {
 	padding: 0 15px;
 }
 
+nav {
+	margin: 0;
+	font-weight: 700;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+ul li a {
+	color: #666;
+	font-size: 1em;
+}
+
+ul li a:hover {
+	color: #D395FA;
+}
+
+footer {
+	margin-top: 100px;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	float: left;
+	margin-right: 20px;
+}
 
 
-@media screen and (max-width: 980px) {
+
+@media screen and (min-width: 900px) {
   .columns .column {
 		margin-bottom: 5px;
     flex-basis: 40%;
@@ -170,20 +151,42 @@ footer {
 			margin: 0;
 		}
 	}
-}
 
-@media screen and (max-width: 680px) {
-	.columns .column {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
+	.wrapper {
+		max-width: 960px;
+		width: 100%;
+		margin: auto;
 	}
 
+	h1 {
+		font-family: Dubbo;
+		font-size: 2em;
+		color: #D395FA;
+	}
+	
+	h1 a {
+		color: #D395FA;
+	}
+	
+	p {
+		font-size: 1.1em;
+		line-height: 1.4em;
+		color: #666;
+	}
+	
+	p a {
+		color:#D395FA
+	}
+	
+	p a:hover {
+		font-weight: 700;
+	}
+	
 	.big-links {
 		font-family: Messina;
 		font-weight: 500;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		padding-top: 20px;
-	
 	}
 	
 	.big-links a{
@@ -194,34 +197,128 @@ footer {
 		font-weight: 700;
 	}
 	
-
 	a {
 		text-decoration: none;
 	}
-	
+	.big-links a:hover{
+		font-weight: 700;
+	}
 	strong {
 		font-weight: 700;
 		color: #D395FA;
 	
 	}
+
+	/* STRUCTURE */
+
+.subhead {
+	width: 80%;
+	padding-top: 20px;
 }
 
-@media screen and (max-width: 380px) {
+	
+}
+
+@media screen and (min-width: 600px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+
+
+	h1 {
+		font-family: Dubbo;
+		font-size: 2.5em;
+		color: #D395FA;
+	}
+	
+	h1 a {
+		color: #D395FA;
+	}
+	
+	p {
+		font-size: 1.1em;
+		line-height: 1.4em;
+		color: #666;
+	}
+	
+	p a {
+		color:#D395FA
+	}
+	
+	p a:hover {
+		font-weight: 700;
+	}
+
+	
 	.big-links {
 		font-family: Messina;
 		font-weight: 500;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		padding-top: 20px;
-	
 	}
 	
 	.big-links a{
 		color: #666;
 	}
-
+	
+	.big-links a:hover{
+		font-weight: 700;
+	}
 	
 	a {
 		text-decoration: none;
+	}
+	.big-links a:hover{
+		font-weight: 700;
+	}
+	strong {
+		font-weight: 700;
+		color: #D395FA;
+	
+	}
+	
+}
+
+@media screen and (min-width: 300px) {
+	.wrapper {
+		width: 90%;
+		margin: auto;
+		padding-top: 20px;
+	}
+
+.subhead {
+	width: 80%;
+	padding-top: 20px;
+
+}
+
+	h1 {
+		font-family: Dubbo;
+		font-size: 2em;
+		color: #D395FA;
+	}
+
+	h1 a{
+		font-family: Dubbo;
+		color: #D395FA;
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+
+	.big-links {
+		font-size: 1.4em;
+	}
+
+	nav ul li a {
+		font-size: 1.2em;
+	}
+
+	footer ul li a {
+		font-size: 1.2em;
 	}
 	
 	strong {
@@ -229,4 +326,5 @@ footer {
 		color: #D395FA;
 	
 	}
+	
 }
