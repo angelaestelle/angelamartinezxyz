@@ -159,14 +159,9 @@ footer ul li {
 	}
 
 	h1 {
-		font-family: Dubbo;
-		font-size: 2em;
-		color: #D395FA;
+		font-size: 3em;
 	}
-	
-	h1 a {
-		color: #D395FA;
-	}
+
 	
 	p {
 		font-size: 1.1em;
@@ -227,13 +222,7 @@ footer ul li {
 
 
 	h1 {
-		font-family: Dubbo;
-		font-size: 2.5em;
-		color: #D395FA;
-	}
-	
-	h1 a {
-		color: #D395FA;
+		font-size: 3em;
 	}
 	
 	p {
@@ -293,16 +282,7 @@ footer ul li {
 
 }
 
-	h1 {
-		font-family: Dubbo;
-		font-size: 2em;
-		color: #D395FA;
-	}
 
-	h1 a{
-		font-family: Dubbo;
-		color: #D395FA;
-	}
 
 	p {
 		font-size: 1em;
