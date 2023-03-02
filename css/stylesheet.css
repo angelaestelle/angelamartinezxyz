@@ -27,11 +27,22 @@ h1 {
 	color: #D395FA;
 }
 
+h1 a {
+	color: #D395FA;
+}
+
 p {
 	font-size: 1.1em;
 	line-height: 1.4em;
 	color: #666;
+}
 
+p a {
+	color:#D395FA
+}
+
+p a:hover {
+	font-weight: 700;
 }
 
 .big-links {
@@ -39,17 +50,22 @@ p {
 	font-weight: 500;
 	font-size: 1.75em;
 	padding-top: 20px;
-
 }
 
 .big-links a{
 	color: #666;
 }
 
+.big-links a:hover{
+	font-weight: 700;
+}
+
 a {
 	text-decoration: none;
 }
-
+.big-links a:hover{
+	font-weight: 700;
+}
 strong {
 	font-weight: 700;
 	color: #D395FA;
@@ -81,15 +97,16 @@ body {
 
 nav {
 	margin: 0;
+	font-weight: 700;
 }
 
-ul {
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-ul li {
+nav ul li {
 	float: left;
 	margin-right: 20px;
 }
@@ -99,7 +116,22 @@ ul li a {
 }
 
 ul li a:hover {
-	font-weight: 700;
+	color: #D395FA;
+}
+
+footer {
+	margin-top: 100px;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	float: left;
+	margin-right: 20px;
 }
 
 .columns {
@@ -186,6 +218,7 @@ footer {
 	.big-links a{
 		color: #666;
 	}
+
 	
 	a {
 		text-decoration: none;
